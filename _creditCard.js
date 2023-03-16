@@ -1,8 +1,9 @@
 function generateCreditCardNumber() {
   let cardNumber = "";
-  for (let i = 1; i <= 16; i++) {
+  for (let i = 1; i <= 10; i++) {
     const digit = Math.floor(Math.random() * 10);
     cardNumber += digit.toString();
+    console.log(digit, "CARDNO");
   }
   return cardNumber;
 }
@@ -25,3 +26,7 @@ function isValidCreditCardNumber(cardNumber) {
   }
   return sum % 10 === 0;
 }
+const number = generateCreditCardNumber();
+console.log(number);
+
+console.log(isValidCreditCardNumber(number));

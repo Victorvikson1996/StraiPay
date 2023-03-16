@@ -1,7 +1,8 @@
 // Generate a valid credit card number using Luhn algorithm
 function generateCreditCardNumber() {
-  // Start with a random 15-digit number
-  let number = Math.floor(Math.random() * 900000000000000) + 100000000000000;
+  // Start with a random 10 -digit number
+  // let number = Math.floor(Math.random() * 900000000000000) + 100000000000000;
+  let number = Math.floor(Math.random() * 9000000000) + 1000000000;
 
   // Apply Luhn algorithm to the first 15 digits
   let sum = 0;
@@ -57,3 +58,5 @@ console.log(isValidCreditCardNumber(3174422811));
 // 3174422811 valid
 
 //6136468785
+
+// isValidCreditCardNumber(3174422811);

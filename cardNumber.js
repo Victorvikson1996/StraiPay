@@ -50,7 +50,7 @@ function isValidCreditCardNumber(ccNum) {
 const validCCNum = generateCreditCardNumber();
 console.log(validCCNum); // e.g. "1234567890"
 
-const invalidCCNum = "1234567891";
-console.log(isValidCreditCardNumber(invalidCCNum)); // false
+// const invalidCCNum = "1234567891";
+// console.log(isValidCreditCardNumber(invalidCCNum)); // false
 
 console.log(isValidCreditCardNumber(validCCNum)); // true
