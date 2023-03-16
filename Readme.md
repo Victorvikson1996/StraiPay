@@ -7,8 +7,6 @@
 
 - Solution in theory using Luhn Algorithm
 
-`we first convert the number to an array of digits. Then, we double every second digit, starting from the second-last digit. If doubling the digit results in a number greater than 9, we subtract 9 from it. Then, we add up all the digits, and if the sum is divisible by 10, the number is valid according to the Luhn algorithm`
-
 How to run the code
 
 1. copy repo url and run:
@@ -17,6 +15,6 @@ How to run the code
 
 - on your vscode or IDE terminal run any of these command lines
 
-- `node valid.js` OR `node credit.js`
+- `node check.js` OR `node isValid.js`
 
-- To run the second js file
+- The two javascript files above runs the Luhn's Algorithms
